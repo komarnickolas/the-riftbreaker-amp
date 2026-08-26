@@ -36,12 +36,12 @@ App.StoreDownloadLocations={}
 App.ExecutableWin=4114030\bin\DedicatedServer.exe
 App.ExecutableLinux=/usr/bin/xvfb-run
 App.WorkingDir=4114030
-App.LinuxCommandLineArgs=-a --server-args="-screen 0 1024x768x24 -nolisten tcp" /usr/bin/wine "./bin/DedicatedServer.exe cli=1"
+App.LinuxCommandLineArgs=-a "{{$FullRootDir}}1580130/proton" run "./bin/DedicatedServer.exe" -a --server-args="-screen 0 1024x768x24 -nolisten tcp" /usr/bin/wine "./bin/DedicatedServer.exe cli=1 config=config.cfg"
 App.WindowsCommandLineArgs=
 App.CommandLineArgs={{$PlatformArgs}} {{$FormattedArgs}}
 App.UseLinuxIOREDIR=False
 App.AppSettings={}
-App.EnvironmentVariables={"LD_LIBRARY_PATH":"{{$FullBaseDir}}linux64:{{$FullRootDir}}linux64:%LD_LIBRARY_PATH%","SteamAppId":"780310","WINEPREFIX":"{{$FullRootDir}}.wine","WINEARCH":"win64","WINEDEBUG":"-all"}
+App.EnvironmentVariables={"LD_LIBRARY_PATH":"{{$FullBaseDir}}linux64:{{$FullRootDir}}linux64:%LD_LIBRARY_PATH%","SteamAppId":"780310","STEAM_COMPAT_DATA_PATH":"{{$FullRootDir}}1580130","STEAM_COMPAT_CLIENT_INSTALL_PATH":"{{$FullRootDir}}1580130","WINEPREFIX":"{{$FullRootDir}}.wine","WINEARCH":"win64","WINEDEBUG":"-all"}
 App.CommandLineParameterFormat=+{0} {1}
 App.CommandLineParameterDelimiter= 
 App.ExitMethod=OS_CLOSE
@@ -96,7 +96,7 @@ App.MonitorDirectChildOnly=False
 App.SupportsUniversalSleep=False
 App.UseSteamQueryForStatus=False
 App.WakeupMode=Any
-App.ApplicationReadyMode=Immediate
+App.ApplicationReadyMode=RCONConnected
 App.QuiesceCommand=
 App.DequiesceCommand=
 App.QuiesceSettleDelayMilliseconds=5000

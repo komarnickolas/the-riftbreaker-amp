@@ -1,1 +1,106 @@
-[]
+[
+    {
+        "DisplayName": "Server Name",
+        "Category": "The Riftbreaker:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "",
+        "Keywords": "server,name",
+        "FieldName": "server_name",
+        "InputType": "text",
+        "ParamFieldName": "server_name",
+        "DefaultValue": ""
+    },
+    {
+        "DisplayName": "Server Password",
+        "Category": "The Riftbreaker:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "",
+        "Keywords": "server,password",
+        "FieldName": "server_password",
+        "InputType": "UserPassword",
+        "ParamFieldName": "server_password",
+        "DefaultValue": ""
+    },
+    {
+        "DisplayName": "Rcon Password",
+        "Category": "The Riftbreaker:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "",
+        "Keywords": "rcon,password",
+        "FieldName": "server_rcon_password",
+        "InputType": "UserPassword",
+        "ParamFieldName": "server_rcon_password",
+        "DefaultValue": ""
+    },
+    {
+        "DisplayName": "Max Players",
+        "Category": "The Riftbreaker:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "",
+        "Keywords": "max,players",
+        "FieldName": "server_max_players_count",
+        "InputType": "number",
+        "MinValue": 2,
+        "MaxValue": 4,
+        "ParamFieldName": "server_max_players_count",
+        "DefaultValue": "4"
+    },
+    {
+        "DisplayName": "Broadcast",
+        "Category": "The Riftbreaker:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "",
+        "Keywords": "broadcast",
+        "FieldName": "server_broadcast_enabled",
+        "InputType": "checkbox",
+        "ParamFieldName": "server_broadcast_enabled",
+        "DefaultValue": "1",
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        }
+    },
+    {
+        "DisplayName": "Pause Game When Empty",
+        "Category": "The Riftbreaker:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "",
+        "Keywords": "pause,game,when,empty",
+        "FieldName": "server_pause_game_when_empty",
+        "InputType": "checkbox",
+        "ParamFieldName": "server_pause_game_when_empty",
+        "DefaultValue": "1",
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        }
+    },
+    {
+        "DisplayName": "App Mode",
+        "Category": "The Riftbreaker:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "",
+        "FieldName": "app_mode",
+        "InputType": "text",
+        "Hidden": true,
+        "ParamFieldName": "app_mode",
+        "DefaultValue": "server"
+    },
+    {
+        "DisplayName": "Difficulty",
+        "Category": "The Riftbreaker:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "",
+        "Keywords": "difficulty",
+        "FieldName": "difficulty",
+        "InputType": "enum",
+        "ParamFieldName": "difficulty",
+        "DefaultValue": "normal",
+        "EnumValues": {
+            "easy": "Easy",
+            "normal": "Normal",
+            "hard": "Hard",
+            "brutal": "Brutal"
+        }
+    }
+]
