@@ -1,7 +1,8 @@
 [
     {
         "ConfigFile": "config.cfg",
-        "ConfigType": "ini",
+        "ConfigType": "template",
+        "ConfigFileTemplate": "the-rifrbreaker/AMP_config.cfg",
         "AutoMap": true
     }
 ]
