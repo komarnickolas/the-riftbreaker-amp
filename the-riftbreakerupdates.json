@@ -27,11 +27,11 @@
         "SkipOnFailure": false
     },
     {
-        "UpdateStageName": "Initialise Wine",
+        "UpdateStageName": "Disable Prefix Sound",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"WINEPREFIX=\\\"{{$FullRootDir}}.wine\\\" WINEARCH=win64 WINEDEBUG=-all /usr/bin/wineboot --init\"",
+        "UpdateSourceArgs": "-c \"cd \\\"{{$FullRootDir}}\\\" && export PATH=\\\"{{$FullRootDir}}.proton/files/bin:$PATH\\\"; export WINEPREFIX=\\\"{{$FullRootDir}}.proton/compatdata/pfx\\\"; export WINEARCH=win64; ./.proton/protonfixes/winetricks sound=disabled > winescript_log.txt 2>&1\"",
         "SkipOnFailure": true
     }
 ]
