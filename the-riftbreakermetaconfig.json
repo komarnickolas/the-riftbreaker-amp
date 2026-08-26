@@ -1,7 +1,7 @@
 [
     {
         "ConfigFile": "config.cfg",
-        "ConfigType": "auto",
-        "AutoMap": false
+        "ConfigType": "ini",
+        "AutoMap": true
     }
 ]
