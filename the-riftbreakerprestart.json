@@ -1,0 +1,8 @@
+[
+    {
+        "UpdateStageName": "Install XVFB",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Bash",
+        "UpdateSourceArgs": "apt install xorg xvfb xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic"
+    }
+]
