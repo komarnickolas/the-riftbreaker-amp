@@ -36,7 +36,8 @@ App.StoreDownloadLocations={}
 App.ExecutableWin=4114030\bin\DedicatedServer.exe
 App.ExecutableLinux=/usr/bin/xvfb-run
 App.WorkingDir=4114030
-App.LinuxCommandLineArgs=-a wine "./bin/DedicatedServer.exe cli=1 config=config.cfg"
+App.LinuxCommandLineArgs=-a --server-args="-screen 0 1024x768x24 -nolisten tcp" /usr/bin/wine ./bin/DedicatedServer.exe
+App.CommandLineArgs={{$PlatformArgs}} cli=1 config=config.cfg {{$FormattedArgs}}
 App.WindowsCommandLineArgs=
 App.CommandLineArgs={{$PlatformArgs}} {{$FormattedArgs}}
 App.UseLinuxIOREDIR=False
