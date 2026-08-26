@@ -2,7 +2,7 @@
     {
         "ConfigFile": "config.cfg",
         "ConfigType": "template",
-        "ConfigFileTemplate": "the-rifrbreaker/AMP_config.cfg",
+        "ConfigFileTemplate": "the-riftbreaker/AMP_config.cfg",
         "AutoMap": true
     }
 ]
