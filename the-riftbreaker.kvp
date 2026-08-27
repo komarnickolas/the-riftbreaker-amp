@@ -36,7 +36,7 @@ App.StoreDownloadLocations={}
 App.ExecutableWin=4114030\bin\DedicatedServer.exe
 App.ExecutableLinux=/usr/bin/xvfb-run
 App.WorkingDir=4114030
-App.LinuxCommandLineArgs=-a "/usr/local/bin/wine64" "{{$FullBaseDir}}bin/DedicatedServer.exe"
+App.LinuxCommandLineArgs=-a "/usr/bin/wine" "{{$FullBaseDir}}bin/DedicatedServer.exe"
 App.CommandLineArgs={{$PlatformArgs}} cli=1 config=config.cfg {{$FormattedArgs}}
 App.WindowsCommandLineArgs=
 App.UseLinuxIOREDIR=False
