@@ -35,7 +35,7 @@ App.StoreSpecificSettings={}
 App.StoreDownloadLocations={}
 App.ExecutableWin=4114030\bin\DedicatedServer.exe
 App.ExecutableLinux=/usr/bin/xvfb-run
-App.WorkingDir=4114030/bin
+App.WorkingDir=4114030
 App.LinuxCommandLineArgs=-a --server-args="-screen 0 1024x768x24" "{{$FullRootDir}}.proton/proton" runinprefix "{{$FullBaseDir}}bin/DedicatedServer.exe"
 App.CommandLineArgs={{$PlatformArgs}} cli=1 config=config.cfg {{$FormattedArgs}}
 App.WindowsCommandLineArgs=
