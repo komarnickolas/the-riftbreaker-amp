@@ -11,7 +11,7 @@ Meta.ConfigManifest=the-riftbreakerconfig.json
 Meta.MetaConfigManifest=the-riftbreakermetaconfig.json
 Meta.ConfigRoot=the-riftbreaker.kvp
 Meta.MinAMPVersion=2.8.0.4
-Meta.SpecificDockerImage=cubecoders/ampbase:wine
+Meta.SpecificDockerImage=cubecoders/ampbase:wine-stable
 Meta.DockerRequired=False
 Meta.DockerBaseReadOnly=False
 Meta.ContainerPolicy=Supported
@@ -36,12 +36,12 @@ App.StoreDownloadLocations={}
 App.ExecutableWin=4114030\bin\DedicatedServer.exe
 App.ExecutableLinux=/usr/bin/xvfb-run
 App.WorkingDir=4114030
-App.LinuxCommandLineArgs=-a --server-args="-screen 0 1024x768x24" "{{$FullRootDir}}.proton/proton" runinprefix "{{$FullBaseDir}}bin/DedicatedServer.exe"
+App.LinuxCommandLineArgs=-a "/usr/local/bin/wine64" "{{$FullBaseDir}}bin/DedicatedServer.exe"
 App.CommandLineArgs={{$PlatformArgs}} cli=1 config=config.cfg {{$FormattedArgs}}
 App.WindowsCommandLineArgs=
 App.UseLinuxIOREDIR=False
 App.AppSettings={}
-App.EnvironmentVariables={"PROTON_USE_WINED3D":"1","GALLIUM_DRIVER":"llvmpipe","LIBGL_ALWAYS_SOFTWARE":"1","VK_ICD_FILENAMES":"/usr/share/vulkan/icd.d/lvp_icd.x86_64.json","PROTON_LOG_DIR":"{{$FullRootDir}}/.proton/logs","PROTON_LOG":"1","SteamAppId":"780310","STEAM_COMPAT_DATA_PATH":"{{$FullRootDir}}.proton/compatdata","STEAM_COMPAT_CLIENT_INSTALL_PATH":"{{$FullBaseDir}}.steam/steam","HOME":"{{$FullBaseDir}}"}
+App.EnvironmentVariables={"SteamAppId":"4114030","STEAM_GAME_APPID":"780310"}
 App.CommandLineParameterFormat=-{0}={1}
 App.CommandLineParameterDelimiter= 
 App.ExitMethod=OS_CLOSE
