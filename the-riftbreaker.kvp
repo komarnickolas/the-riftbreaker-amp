@@ -18,7 +18,7 @@ Meta.ContainerPolicy=Supported
 Meta.ContainerPolicyReason=
 Meta.ExtraSetupStepsURI=
 Meta.Prerequisites=[]
-Meta.ExtraContainerPackages=["xvfb","xauth","xfonts-base","x11-xserver-utils"]
+Meta.ExtraContainerPackages=["xvfb","xauth","xfonts-base","x11-xserver-utils", "mesa-vulkan-drivers"]
 Meta.ConfigReleaseState=EarlyWorkInProgress
 Meta.NoCommercialUsage=False
 Meta.ConfigVersion=1
@@ -41,7 +41,7 @@ App.CommandLineArgs={{$PlatformArgs}} cli=1 config=config.cfg {{$FormattedArgs}}
 App.WindowsCommandLineArgs=
 App.UseLinuxIOREDIR=False
 App.AppSettings={}
-App.EnvironmentVariables={"PROTON_LOG_DIR":"{{$FullRootDir}}/.proton/logs","PROTON_LOG":"1","SteamAppId":"780310","STEAM_COMPAT_DATA_PATH":"{{$FullRootDir}}.proton/compatdata","STEAM_COMPAT_CLIENT_INSTALL_PATH":"{{$FullBaseDir}}.steam/steam","HOME":"{{$FullBaseDir}}"}
+App.EnvironmentVariables={"PROTON_USE_WINED3D":"1","GALLIUM_DRIVER":"llvmpipe","LIBGL_ALWAYS_SOFTWARE":"1","VK_ICD_FILENAMES":"/usr/share/vulkan/icd.d/lvp_icd.x86_64.json","PROTON_LOG_DIR":"{{$FullRootDir}}/.proton/logs","PROTON_LOG":"1","SteamAppId":"780310","STEAM_COMPAT_DATA_PATH":"{{$FullRootDir}}.proton/compatdata","STEAM_COMPAT_CLIENT_INSTALL_PATH":"{{$FullBaseDir}}.steam/steam","HOME":"{{$FullBaseDir}}"}
 App.CommandLineParameterFormat=-{0}={1}
 App.CommandLineParameterDelimiter= 
 App.ExitMethod=OS_CLOSE
