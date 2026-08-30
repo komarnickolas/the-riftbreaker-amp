@@ -11,14 +11,14 @@ Meta.ConfigManifest=the-riftbreakerconfig.json
 Meta.MetaConfigManifest=the-riftbreakermetaconfig.json
 Meta.ConfigRoot=the-riftbreaker.kvp
 Meta.MinAMPVersion=2.8.0.4
-Meta.SpecificDockerImage=cubecoders/ampbase:wine-stable
+Meta.SpecificDockerImage=cubecoders/ampbase:wine
 Meta.DockerRequired=False
 Meta.DockerBaseReadOnly=False
 Meta.ContainerPolicy=Supported
 Meta.ContainerPolicyReason=
 Meta.ExtraSetupStepsURI=
 Meta.Prerequisites=[]
-Meta.ExtraContainerPackages=["xvfb","xauth","xfonts-base","x11-xserver-utils","winetricks","lib32gcc-s1"]
+Meta.ExtraContainerPackages=["xvfb","xauth","cabextract","p7zip-full","wget","curl","procps","iproute2"]
 Meta.ConfigReleaseState=EarlyWorkInProgress
 Meta.NoCommercialUsage=False
 Meta.ConfigVersion=1
@@ -41,7 +41,7 @@ App.CommandLineArgs={{$PlatformArgs}} cli=1 config=config.cfg {{$FormattedArgs}}
 App.WindowsCommandLineArgs=
 App.UseLinuxIOREDIR=False
 App.AppSettings={}
-App.EnvironmentVariables={"STEAMAPPID":"780310","STEAM_GAME_APPID":"780310","WINEDLLOVERRIDES":"mscoree,mshtml=","WINEARCH":"win64"}
+App.EnvironmentVariables={"WINEPREFIX":"{{$FullRootDir}}.wine","STEAMAPPID":"780310","STEAM_GAME_APPID":"780310","WINEDLLOVERRIDES":"mscoree,mshtml=","WINEARCH":"win64"}
 App.CommandLineParameterFormat=-{0}={1}
 App.CommandLineParameterDelimiter= 
 App.ExitMethod=OS_CLOSE
