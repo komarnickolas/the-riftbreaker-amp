@@ -22,8 +22,8 @@
         "UpdateStageName": "Install vcrun2022 and d3dcompiler_47",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
-        "UpdateSourceData": "/usr/bin/xvfb-run",
-        "UpdateSourceArgs": "-a winetricks -q vcrun2022 dsdcompiler_47",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c \"xvfb-run -a winetricks -q vcrun2022 dsdcompiler_47\"",
         "SkipOnFailure": false
     }
 ]
